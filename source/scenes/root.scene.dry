@@ -15,10 +15,7 @@ go-to: start_menu_2
 - @game_over.achievements
 
 @start_1
-on-arrival: player_beg = 1 if not achievement_game_completed
-go-to: start if achievement_game_completed; pls_player if not achievement_game_completed
-
-@pls_player
+go-to: start if achievement_game_completed; start if not achievement_game_completed
 
 @start
 on-arrival: {!
