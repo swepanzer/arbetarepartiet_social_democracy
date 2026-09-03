@@ -6,12 +6,11 @@ go-to: post_event if started = 1; start_menu if started = 0
 new-page: true
 go-to: start_menu_2
 
-= Social Democracy: An Alternate History
+= Arbetarepartiet: An Alternate History
 
 @start_menu_2
 
 - @start_1: Start game
-- @modinfo: Mod Info - Last Updated 2026/08/04
 - @credits: Credits
 - @game_over.achievements
 
@@ -20,19 +19,12 @@ on-arrival: player_beg = 1 if not achievement_game_completed
 go-to: start if achievement_game_completed; pls_player if not achievement_game_completed
 
 
-@pls_player
-
-Read.
-
-- @modinfo.infotext: Mod Info - Last Updated 2026/08/04
-
-
 @start
 on-arrival: {!
 Q.started = 1;
 // time elapsed (in months)
 Q.time = 1;
-Q.year = 1928;
+Q.year = 2014;
 Q.month = 1;
 Q.week = 0;
 Q.week_checked = 0;
