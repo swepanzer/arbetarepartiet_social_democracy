@@ -124,6 +124,14 @@ Q.dnvp_relation = 5;
 Q.nsdap_relation = 0;
 Q.lvp_relation = 0;
 
+Q.v_relation = 40;
+Q.mp_relation = 60;
+Q.c_relation = 50;
+Q.l_relation = 35;
+Q.m_relation = 20;
+Q.kd_relation = 15;
+Q.sd_relation = 0;
+
 Q.kpd_leader = "Thälmann";
 Q.z_leader = "Marx";
 Q.z_ideology = "Right";
@@ -242,7 +250,7 @@ Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
+Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other', 'v', 'mp', 'c', 'l', 'm', 'kd', 'sd'];
 Q.parties_graph = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
 
 Q.sapd_formed = 0;
@@ -254,59 +262,108 @@ Q.cvp_formed = 0;
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_spd = 55;
-Q.workers_kpd = 22;
-Q.workers_z = 5;
-Q.workers_ddp = 2;
+
+Q.workers_kpd = 0;
+Q.workers_z = 0;
+Q.workers_ddp = 0;
 Q.workers_dvp = 0;
-Q.workers_dnvp = 6;
+Q.workers_dnvp = 0;
 Q.workers_nsdap = 0;
-Q.workers_other = 10;
+Q.workers_other = 0;
+
+Q.workers_spd = 55;
+Q.workers_v = 20;
+Q.workers_mp = 3;
+Q.workers_c = 1;
+Q.workers_l = 0;
+Q.workers_m = 0;
+Q.workers_kd = 0;
+Q.workers_sd = 30;
+
+Q.new_middle_kpd = 0;
+Q.new_middle_z = 0;
+Q.new_middle_ddp = 0;
+Q.new_middle_dvp = 0;
+Q.new_middle_dnvp = 0;
+Q.new_middle_nsdap = 0;
+Q.new_middle_other = 0;
 
 Q.new_middle_spd = 8;
-Q.new_middle_kpd = 1;
-Q.new_middle_z = 10;
-Q.new_middle_ddp = 23;
-Q.new_middle_dvp = 22;
-Q.new_middle_dnvp = 10;
-Q.new_middle_nsdap = 4;
-Q.new_middle_other = 22;
+Q.new_middle_v = 0;
+Q.new_middle_mp = 5;
+Q.new_middles_c = 10;
+Q.new_middle_l = 10;
+Q.new_middle_m = 60;
+Q.new_middle_kd = 15;
+Q.new_middle_sd = 20;
 
-Q.old_middle_spd = 4;
 Q.old_middle_kpd = 0;
-Q.old_middle_z = 6;
-Q.old_middle_ddp = 10;
-Q.old_middle_dvp = 27;
-Q.old_middle_dnvp = 24;
-Q.old_middle_nsdap = 9;
-Q.old_middle_other = 20;
+Q.old_middle_z = 0;
+Q.old_middle_ddp = 0;
+Q.old_middle_dvp = 0;
+Q.old_middle_dnvp = 0;
+Q.old_middle_nsdap = 0;
+Q.old_middle_other = 0;
 
-Q.rural_spd = 9;
+Q.old_middle_spd = 5;
+Q.old_middle_v = 0;
+Q.old_middle_mp = 1;
+Q.old_middle_c = 5;
+Q.old_middle_l = 15;
+Q.old_middle_m = 50;
+Q.old_middle_kd = 20;
+Q.old_middle_sd = 30;
+
 Q.rural_kpd = 0;
-Q.rural_z = 5;
-Q.rural_ddp = 4;
-Q.rural_dvp = 15;
-Q.rural_dnvp = 46;
-Q.rural_nsdap = 3;
-Q.rural_other = 16;
+Q.rural_z = 0;
+Q.rural_ddp = 0;
+Q.rural_dvp = 0;
+Q.rural_dnvp = 0;
+Q.rural_nsdap = 0;
+Q.rural_other = 0;
 
-Q.unemployed_spd = 21;
-Q.unemployed_kpd = 50;
-Q.unemployed_z = 1;
+Q.rural_spd = 8;
+Q.rural_v = 0;
+Q.rural_mp = 1;
+Q.rural_c = 40;
+Q.rural_l = 5;
+Q.rural_m = 15;
+Q.rural_kd = 20;
+Q.rural_sd = 30;
+
+Q.unemployed_kpd = 0;
+Q.unemployed_z = 0;
 Q.unemployed_ddp = 0;
 Q.unemployed_dvp = 0;
-Q.unemployed_dnvp = 4;
-Q.unemployed_nsdap = 13;
-Q.unemployed_other = 7;
+Q.unemployed_dnvp = 0;
+Q.unemployed_nsdap = 0;
+Q.unemployed_other = 1;
 
-Q.catholics_spd = 21;
-Q.catholics_kpd = 2;
-Q.catholics_z = 49;
+Q.unemployed_spd = 35;
+Q.unemployed_v = 20;
+Q.unemployed_mp = 1;
+Q.unemployed_c = 3;
+Q.unemployed_l = 2;
+Q.unemployed_m = 5;
+Q.unemployed_kd = 2;
+Q.unemployed_sd = 10;
+
+Q.catholics_kpd = 0;
+Q.catholics_z = 0;
 Q.catholics_ddp = 0;
-Q.catholics_dvp = 5;
-Q.catholics_dnvp = 5;
+Q.catholics_dvp = 0;
+Q.catholics_dnvp = 0;
 Q.catholics_nsdap = 0;
-Q.catholics_other = 16;
+Q.catholics_other = 0;
+
+Q.catholics_spd = 55;
+Q.catholics_v = 30;
+Q.catholics_mp = 4;
+Q.catholics_c = 4;
+Q.catholics_l = 2;
+Q.catholics_m = 7;
+Q.catholics_kd = 0;
+Q.catholics_sd = 3;
 
 Q.workers_spd_old = 60;
 Q.new_middle_spd_old = 8;
@@ -321,31 +378,47 @@ Q.catholics_spd_old = 20;
 // note: the Z figures also include the BVP (Bavarian people's party)
 // since they were ideologically similar, but they were separate parties.
 // They did not have a CDU/CSU-style relationship.
-Q.spd_r = 26.5;
-Q.kpd_r = 9.1;
-Q.z_r = 17.8;
-Q.ddp_r = 6.5;
-Q.dvp_r = 10.3;
-Q.dnvp_r = 20.9;
-Q.nsdap_r = 3;
-Q.other_r = 5.9;
-Q.bvp_r = 3.9;
-Q.wp_r = 2.4;
-Q.cnblp_r = 1.7;
-Q.true_other_r = 1.8;
-Q.reichstag_size = 4.93;
+Q.spd_r = 32.1;
+Q.kpd_r = 0;
+Q.z_r = 0;
+Q.ddp_r = 0;
+Q.dvp_r = 0;
+Q.dnvp_r = 0;
+Q.nsdap_r = 0;
+Q.other_r = 0;
+Q.bvp_r = 0;
+Q.wp_r = 0;
+Q.cnblp_r = 0;
+Q.true_other_r = 0;
+Q.reichstag_size = 3.49;
 Q.landtag_size = 4.5;
 
+Q.v_r = 5.4;
+Q.mp_r = 7.2;
+Q.c_r = 6.6;
+Q.l_r = 6.9;
+Q.m_r = 30.7;
+Q.kd_r = 5.4;
+Q.sd_r = 5.4;
+
 // diff from prev
-Q.old_spd_r = 26.5;
-Q.old_kpd_r = 9.1;
-Q.old_z_r = 13.9;
-Q.old_ddp_r = 6.5;
-Q.old_dvp_r = 10.3;
-Q.old_dnvp_r = 20.9;
-Q.old_nsdap_r = 3;
-Q.old_other_r = 5.9;
-Q.old_bvp_r = 3.9;
+Q.old_spd_r = 37.2;
+Q.old_kpd_r = 0;
+Q.old_z_r = 0;
+Q.old_ddp_r = 0;
+Q.old_dvp_r = 0;
+Q.old_dnvp_r = 0;
+Q.old_nsdap_r = 0;
+Q.old_other_r = 0;
+Q.old_bvp_r = 0;
+
+Q.old_v_r = 6.3;
+Q.old_mp_r = 5.4;
+Q.old_c_r = 8.3;
+Q.old_l_r = 8.0;
+Q.old_m_r = 27.8;
+Q.old_kd_r = 6.9;
+Q.old_sd_r = 0;
 
 // old election votes
 Q.previous_spd_last_election_votes = 26;
@@ -476,7 +549,15 @@ Q.adjustmentFactors_nsdap = 1.0;
 Q.adjustmentFactors_dnf = 1.0;
 Q.adjustmentFactors_dnef = 1.0;
 Q.adjustmentFactors_kvp = 1.0;
-Q.adjustmentFactors_other = 0.75;
+Q.adjustmentFactors_other = 1;
+
+Q.adjustmentFactors_v = 1.0;
+Q.adjustmentFactors_mp = 1.0;
+Q.adjustmentFactors_c = 1.0;
+Q.adjustmentFactors_l = 1.0;
+Q.adjustmentFactors_m = 1.0;
+Q.adjustmentFactors_kd = 1.0;
+Q.adjustmentFactors_sd = 1.0;
 
 Q.adjustmentFactors_votes_spd = 1.0;
 Q.adjustmentFactors_votes_sapd = 1.0;
@@ -491,6 +572,14 @@ Q.adjustmentFactors_votes_dnf = 1.0;
 Q.adjustmentFactors_votes_dnef = 1.0;
 Q.adjustmentFactors_votes_kvp = 1.0;
 Q.adjustmentFactors_votes_other = 1.0;
+
+Q.adjustmentFactors_votes_v = 1.0;
+Q.adjustmentFactors_votes_mp = 1.0;
+Q.adjustmentFactors_votes_c = 1.0;
+Q.adjustmentFactors_votes_l = 1.0;
+Q.adjustmentFactors_votes_m = 1.0;
+Q.adjustmentFactors_votes_kd = 1.0;
+Q.adjustmentFactors_votes_sd = 1.0;
 
 Q.adjustmentFactors_spd_prussia = 1.0;
 Q.adjustmentFactors_sapd_prussia = 1.0;
