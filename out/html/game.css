@@ -695,6 +695,28 @@ th {
 }
 
 /* Styles for parties */
+.seat.v {
+  fill: #B00000;
+}
+.seat.mp {
+  fill: #2B912C;
+}
+.seat.c {
+  fill: #114838;
+}
+.seat.l {
+  fill: #006AB3;
+}
+.seat.m {
+  fill: #019CDB;
+}
+.seat.kd {
+  fill: #231977;
+}
+.seat.sd {
+  fill: #FEDF09;
+}
+
 .seat.kpd {
   fill: #700000;
 }
