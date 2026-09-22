@@ -870,10 +870,10 @@ Q.prussian_reichsexekution_timer = 0;
 Q.in_election = 1;
 Q.in_election_prussia = 1;
 Q.next_election_time_prussia = 5;
-Q.next_election_year_prussia = 1928;
-Q.next_election_month_prussia = 5;
-Q.next_election_year = 1928;
-Q.next_election_month = 12;
+Q.next_election_year_prussia = 2014;
+Q.next_election_month_prussia = 9;
+Q.next_election_year = 2014;
+Q.next_election_month = 9;
 Q.next_election_time = 12;
 // government affairs timers
 Q.campaigning_timer = 0;
